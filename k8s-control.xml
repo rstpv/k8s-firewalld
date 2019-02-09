@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <service>
-  <short>Kubernetes Worker</short>
-  <description>Ports required for a worker node as per of https://rancher.com/docs/rancher/v2.x/en/installation/references/ (22, 2376 and 9099 added for simplicity, those might be configured individually)</description>
+  <short>Rancher control node</short>
+  <description>Ports required for a control node as per of https://rancher.com/docs/rancher/v2.x/en/installation/references/ (22, 2376 and 9099 added for simplicity, those might be configured individually)</description>
   <port port="22" protocol="tcp"/>   
   <port port="80" protocol="tcp"/>
   <port port="443" protocol="tcp"/>
+  <port port="6443" protocol="tcp"/>
   <port port="8472" protocol="udp"/>
   <port port="9099" protocol="tcp"/>
   <port port="10250" protocol="tcp"/>
   <port port="10254" protocol="tcp"/>
-  <port port="30000-32767 " protocol="tcp"/>  
 </service>

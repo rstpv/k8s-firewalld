@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Rancher etcd node</short>
+  <description>Ports required for a Etcd node as per of https://rancher.com/docs/rancher/v2.x/en/installation/references/ (22, 2376 and 9099 added for simplicity, those might be configured individually)</description>
+  <port port="22" protocol="tcp"/>   
+  <port port="2376" protocol="tcp"/>   
+  <port port="2379" protocol="tcp"/>
+  <port port="2380" protocol="tcp"/>
+  <port port="8472" protocol="udp"/>
+  <port port="9099" protocol="tcp"/>
+  <port port="10250" protocol="tcp"/>
+</service>
